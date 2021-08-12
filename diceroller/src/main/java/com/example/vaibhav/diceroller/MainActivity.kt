@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         countButton.setOnClickListener { countUp() }
     }
 
+    //Increments the dice roll by 1
     private fun countUp() {
         val resultText: TextView = findViewById(R.id.txt_hello_world)
         if(resultText.text.contains("Hello")) {
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Roll the dice with random 6
     private fun rollDice() {
         val txtResult: TextView = findViewById(R.id.txt_hello_world)
         val randomNumber = (1..6).random()
